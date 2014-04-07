@@ -72,8 +72,8 @@
   };
 
   RetinaImagePath.prototype.is_svg = function() {
-    return !!(this.path.match(/.svg$/i))
-  }
+    return !!(this.path.match(/\.svg$/i));
+  };
 
   RetinaImagePath.prototype.check_2x_variant = function(callback) {
     var http, that = this;
